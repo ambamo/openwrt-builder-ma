@@ -6,7 +6,7 @@
 #   ECM patches from Bitthief
 ################################################
 
-name: Build AX3600 with ECM
+name: Build AX3600 with ECM - rmandrad
 
 on:
   repository_dispatch:
