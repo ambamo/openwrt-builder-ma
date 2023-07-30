@@ -168,7 +168,7 @@ jobs:
       uses: ncipollo/release-action@main
       if: env.ORGANIZE_STATUS == 'success' && env.UPLOAD_RELEASE == 'true' && (!cancelled())
       with:
-        tag: v${{ env.FILE_DATE }}-ax3600.ECM
+        tag: v${{ env.FILE_DATE }}-ax3600-rmandrad.ECM
         removeArtifacts: false
         artifacts: ${{ env.FIRMWARE }}/*
         allowUpdates: true
