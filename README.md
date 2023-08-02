@@ -3,7 +3,7 @@ Building OpenWrt with GitHub Actions
 ## Device Supported
 
 Official/mainline
-- ipq807x (Redmi AX3600, mainline Kernel 6.1.X, **no ANY Offloading**)
+- ipq807x (Xiaomi AX3600, mainline Kernel 6.1.X, **no ANY Offloading**)
 - x86_64, using Immortalwrt/Lean's OpenWrt as upstream
 
 Community Builds
