@@ -35,6 +35,7 @@ Community Builds
 - [Robimarko (IPQ807x/AX6)](https://github.com/robimarko/openwrt/)
 - [Bitthief (IPQ807x/AX6 with ECM)](https://github.com/bitthief/openwrt/)
 - [Ansuel (IPQ807x/AX6 with ECM)](https://github.com/AgustinLorenzo/openwrt)
+- [rmamdrad (IPQ807x/AX6 with ECM)](https://github.com/rmandrad/openwrt)
 - [sdf8057 (IPQ6000/ZN M2)](https://github.com/sdf8057/ipq6000)
 - [hanwckf (MT798x/360T7, 5.4 kernel with mediatek_hnat + mtwifi)](https://github.com/hanwckf/immortalwrt-mt798x)
 - [Flippy (unifreq/openwrt_packit)](https://github.com/unifreq/openwrt_packit)
