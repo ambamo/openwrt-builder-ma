@@ -26,7 +26,7 @@ permissions:
 env:
   REPO_URL: https://github.com/rmandrad/openwrt
   REPO_BRANCH: qualcommax-6.1-nss
-  FEEDS_CONF: AX3600.with.ECM/feeds.conf.ecm
+  FEEDS_CONF: AX3600.with.ECM/feeds.conf.ecm.rmandrad
   CONFIG_FILE: AX3600.with.ECM/.config
   DIY_P1_SH: AX3600.with.ECM/diy-part1.sh
   DIY_P2_SH: AX3600.with.ECM/diy-part2.sh
