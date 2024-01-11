@@ -6,7 +6,7 @@
 #   ECM patches from Bitthief
 ################################################
 
-name: Build AX3600 with ECM QOSMIO
+name: Build AX3600 with QOSMIO
 
 on:
   repository_dispatch:
@@ -162,7 +162,7 @@ jobs:
       uses: actions/upload-artifact@main
       if: env.ORGANIZE_STATUS == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       with:
-        name: OpenWrt_firmware_with_ECM_${{ env.DEVICE_NAME }}
+        name: OpenWrt_firmware_QOSMIO_${{ env.DEVICE_NAME }}
         path: ${{ env.FIRMWARE }}
 
     - name: Upload OpenWrt Firmware to Release
@@ -170,12 +170,12 @@ jobs:
       uses: ncipollo/release-action@main
       if: env.ORGANIZE_STATUS == 'success' && env.UPLOAD_RELEASE == 'true' && (!cancelled())
       with:
-        tag: v${{ env.FILE_DATE }}-ax3600.ECM
+        tag: v${{ env.FILE_DATE }}-ax3600.QOSMIO
         removeArtifacts: false
         artifacts: ${{ env.FIRMWARE }}/*
         allowUpdates: true
         body: |
-            AX3600 ECM             
+            AX3600 QOSMIO             
             Default IP: 192.168.0.1
             Default username: root
             Default password: password
@@ -189,7 +189,7 @@ jobs:
         repository: ${{ github.repository }}
         retain_days: 21
         keep_minimum_runs: 3
-        delete_workflow_pattern: "ECM"
+        delete_workflow_pattern: "QOSMIO"
 
     - name: Remove old Releases
       uses: dev-drprasad/delete-older-releases@master
@@ -197,7 +197,7 @@ jobs:
       with:
         repo:
         keep_latest: 15
-        delete_tag_pattern: 'ECM'
+        delete_tag_pattern: 'QOSMIO'
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
